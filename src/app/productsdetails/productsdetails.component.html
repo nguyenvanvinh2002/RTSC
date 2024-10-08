@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-12 col-lg-5">
+        <img style="width: 100%;" src="QR.png" alt="">
+        <div style="display: flex;justify-content: center;">
+            <span style="font-size: 12px;color: red;">Lưu ý: Mã QR chưa điền nội dung, vui lòng điền chính xác nội dung</span>
+        </div>
+    </div>
+    <div class="loading-overlay" id="loadingOverlay">
+        <img src="lodding.gif" alt="Loading..." style="width: 50px;"> 
+        <span style="color: #ffffff;z-index: 1000;margin-left: 10px;">Đang kiểm tra....</span>
+    </div>
+    <div class="col-12 col-lg-7">
+         <div style="display: flex;align-items: center;justify-content: center;">
+            <span style="font-size: 25px;color: red;">Vui lòng điền đúng nội dung giao dịch</span>
+        </div>
+        
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 20px;">
+            <span style="text-align: center;margin: 0;font-size: 20px;">HỌ VÀ TÊN : NGUYEN VAN VINH</span>
+           
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 20px;">
+            <span style="text-align: center;margin: 0;font-size: 20px;">SỐ TÀI KHOẢN : {{stk}}</span>
+            <i (click)="CopySTK()" style="font-size: 20px;margin-left: 10px;cursor: pointer;"  class="fa-solid fa-copy"></i>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 20px;">
+            <span style="text-align: center;margin: 0;font-size: 20px;">NGÂN HÀNG : MBBANK</span>
+           
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 20px;">
+            <span style="text-align: center;margin: 0;font-size: 20px;">NỘI DUNG  : {{content}}</span>
+            <i (click)="CopyContent()" style="font-size: 20px;margin-left: 10px;cursor: pointer;"  class="fa-solid fa-copy"></i>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 20px;">
+            <span style="text-align: center;margin: 0;font-size: 20px;">GIÁ  : {{price}}</span>
+           
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 20px;">
+            <span style="text-align: center;margin: 0;font-size: 12px;color: red;">Máy chủ yếu - Vui lòng check lịch sử giao dịch bằng tay</span>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 20px;">
+            <button (click)="checkbank()" style="text-align: center;margin: 0;font-size: 20px;color: #ffffff;padding: 0px 10px 2px 10px;border: none;border-radius: 5px;background-color: red;">Kiểm Tra Giao Dịch</button>
+        </div>
+    </div>

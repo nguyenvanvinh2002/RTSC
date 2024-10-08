@@ -1,0 +1,34 @@
+<div style="background-color: #e0ebf9;margin-top: 30px;">
+    <div style="margin-left: 5px;" >
+        <p style="font-size: 20px;" >Lưu ý trước khi mua code</p>
+    </div>
+    <div style="margin-left: 5px;" >
+        <p style="font-size: 13px;color: red;" > + Mỗi tài khoản chỉ được nhập tối đa 1 loại code / 1 tài khoản</p>
+    </div>
+    <div style="margin-left: 5px;" >
+        <p style="font-size: 13px;color: red;" > + Hình thức giao dịch Bank > Code</p>
+    </div>
+    <div style="margin-left: 5px;" >
+        <p style="font-size: 13px;color: red;" > + Trả code tự động-không trùng code</p>
+    </div>
+</div>
+
+<div style="display: flex;justify-content: space-between;flex-wrap: wrap;">
+    <div *ngFor="let lst of lstproducts" class="box">
+       <a style="text-decoration: none;" href="/productsdetails/{{lst.id}}">
+        <img style="width: 100%;" src="rtsc.png" alt="">
+        <div style="text-align: center; margin-top: 10px;">
+            <span style="color: #f7b03c;font-weight: bold;" ></span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <span style="color: rgb(129, 129, 129);" >{{lst.name}}</span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <span style="color: rgb(129, 129, 129);" ><span style="color: red;">{{lst.price}}</span> VND</span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <span style="color: rgb(129, 129, 129);border: 1px rgb(129, 129, 129) solid;padding: 5px 30px;width: 60px;" >TẠO GIAO DỊCH</span>
+        </div>
+       </a>
+    </div>
+</div>

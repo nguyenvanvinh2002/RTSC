@@ -1,0 +1,16 @@
+.text{
+    text-decoration: none;
+    color: black;
+}
+.text:hover{
+    color: #32c5d2;
+}
+.icon{
+    color: black;
+    margin: 5px 5px 5px 0px;
+    border: 1px black solid;
+    padding: 5px 10px 5px 10px;
+}
+.icon:hover{
+    color: #ffffff;
+}

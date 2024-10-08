@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+.zalo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zalo span{
+    margin-right: 10px;
+    font-weight: bold;
+}
+.zalo a{
+    font-weight: bold;
+}
+.header-thongbao{
+    color: red;
+}
+.facebook{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.facebook span{
+    margin-right: 10px;
+    font-weight: bold;
+}
+.facebook a{
+    font-weight: bold;
+}

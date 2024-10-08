@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'RTSCCODE';
+  gmail:string='Vinh2002minhkhai@gmail.com'
 }

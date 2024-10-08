@@ -1,0 +1,13 @@
+.box {
+    margin-top: 20px;
+    
+    width: 220px;
+    height: 300px;
+    border: 4px solid transparent;
+    border-radius: 10px;
+    position: relative;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(90deg, red, yellow, green, blue) border-box;
+
+  }
+
